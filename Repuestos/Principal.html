@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="Css/principal.css">
+    <!-- Iconos-->
+    <script src="https://kit.fontawesome.com/8073cbe658.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Hace parte lo que esta en rojo -->
+    <header class="encabezado">
+        <div class="navegacion">
+            <a href="Principal.html"> <i class="fa-solid fa-house"></i> </a>
+            <a href="Repuestos.html"> Repuestos </a>
+            <a href="Contactenos.html"> Contactenos </a> <br>
+            <a href="#" id="open-login-modal"><i class="fa-solid fa-user"></i></a>
+        </div> 
+    </header> 
+
+    <!-- Boton iniciar sesion-->
+    <div class="overlay" id="login-modal">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_login.php" method="post">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="registro-contrasena">
+                <a href="Registrarse.html"> Registrarse</a>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo y el nombre de la empresa-->
+    <div class="logonombre"> 
+        <img id="logo" src="img/logo1.avif" alt="Logo">
+        <h1> YAMAHA REPUESTOS DE MOTOS</h1>   
+    </div>
+
+    <!-- Banner de publicidad -->
+    <div class="banner">
+        <div class="capa"></div>
+            <div class="info">
+                <h1>BIENVENIDOS</h1>
+                    <a href="Repuestos.html"> Repuestos </a>
+                    <a href="Contactenos.html"> Contactenos </a>
+            </div>
+    </div> <br><br>
+             
+    <!--Pie de Pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <small>&copy; 2023 <b> Tienda de repuestos</b>
+                Todos los Derechos Reservados</small>
+            </div>
+            <div class="box">
+                <h2> SIGUENOS</h2>
+                <div class="red-social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-regular fa-envelope"></i>      
+                </div>
+             </div>
+        </div>
+    </footer>
+    <script src="./Js/Principal.js"></script>
+</body>
+</html>

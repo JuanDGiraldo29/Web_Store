@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="Css/Registrarse.css">
+    <!-- Iconos-->
+    <script src="https://kit.fontawesome.com/8073cbe658.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Hace parte lo que esta en rojo -->
+    <header class="encabezado">
+        <div class="navegacion">
+            <a href="Principal.html"> <i class="fa-solid fa-house"></i> </a>
+            <a href="Repuestos.html"> Repuestos </a>
+            <a href="Contactenos.html"> Contactenos </a> <br>
+            
+        </div> 
+    </header> 
+
+    <!-- logo y el nombre de la empresa-->
+    <div class="logonombre"> 
+        <img id="logo" src="img/logo1.avif" alt="Logo">
+        <h1> YAMAHA REPUESTOS DE MOTOS</h1>   
+    </div>
+
+    <!-- Formulario -->
+    <div class="formulario-container">
+        <h2>Registro de Usuario</h2>
+        <form action="procesar_registro.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Primer Apellido:</label>
+                <input type="text" id="apellido" name "apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Segundo Apellido:</label>
+                <input type="text" id="apellido" name "apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-doc">Ingresar Tipo de Documento:</label>
+                <input type="text" id="tipo-doc" name="tipo-doc" required>
+            </div>
+
+            <div class="form-group">
+                <label for="num-doc">Ingresar Número de Documento:</label>
+                <input type="text" id="num-doc" name="num-doc" required>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Ingresar Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Ingresar Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha-nacimiento">Ingresar Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Seleccionar Género:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Establecer Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn-almacenar">Almacenar</button>
+                <button type="button" class="btn-limpiar">Limpiar</button>
+            </div>
+        </form>
+    </div>
+  
+    <script src="formulario.js"></script>
+
+    <!-- Agrega aquí el enlace a tu archivo JavaScript -->
+    <!--Pie de Pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <small>&copy; 2023 <b> Tienda de repuestos</b>
+                    Todos los Derechos Reservados</small>
+                </div>
+            <div class="box">
+                <h2> SIGUENOS</h2>
+                <div class="red-social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-regular fa-envelope"></i>      
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

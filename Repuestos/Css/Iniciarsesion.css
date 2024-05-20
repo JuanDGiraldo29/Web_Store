@@ -1,0 +1,106 @@
+body{
+    border:  solid #060606;  
+}
+/*** Banner (lo que este dentro de lo rojo) *******/
+.encabezado{
+    background-color: rgba(199, 7, 7, 0.837);
+    padding-left: 75%; /* La ubicación del buscar y el menu*/
+}
+/* El registrarse queda al lado del menu*/ 
+.navegacion{
+    display:flex;    
+}
+/* tamaño-letra del menu*/ 
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size:large;
+    margin-left: 25px;
+    
+}
+/* diseño al momento de darle clic al menu*/ 
+.navegacion :hover{
+    background: rgb(0, 0, 11);
+    transition: all 0.4s linear; /*Cuando le da clic en el menu cambia*/
+    border-radius: 10%; 
+}
+
+/*** El logo y el titulo *******/
+#logo {
+    width: 140px;
+    height: 130px; /* Tamaño del logo */
+    margin-right: 350px; /* Espacio entre el logo y el título */
+    
+}
+
+.logonombre{
+    display: flex; /* coloca el nombre al lado del logo */
+    align-items: center; /* Alinea el nombre en el centro */
+    background-color: #ffffff;
+    color: #060606; 
+    font-style: italic; 
+}
+/******************************** Formulario ************************************/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.login-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

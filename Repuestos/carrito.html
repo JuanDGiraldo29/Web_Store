@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="Css/Repuestos.css">
+    <!-- Iconos-->
+    <script src="https://kit.fontawesome.com/8073cbe658.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo"> LOGO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="Repuestos.html">
+                            <i class="fa-solid fa-arrow-left-long"></i></i> Seguir comprando 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i> Carrito 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">&copy; 2023 Tienda de repuestos</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal"> Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacio. <i class="fa-regular fa-face-frown-open"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!--Esto se va a completar con el JS-->
+                </div>   
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p> Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">COMPRAR AHORA</button>
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por su compra. <i class="fa-regular fa-face-laugh-beam"></i></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./Js/carrito.js"></script>
+</body>
+</html>

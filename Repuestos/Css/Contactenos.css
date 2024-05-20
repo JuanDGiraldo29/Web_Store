@@ -1,0 +1,156 @@
+body{
+    border:  solid #060606;  
+}
+/*** Banner (lo que este dentro de lo rojo) *******/
+.encabezado{
+    background-color: rgba(199, 7, 7, 0.837);
+    padding-left: 75%; /* La ubicación del buscar y el menu*/
+}
+
+/* El registrarse queda al lado del menu*/ 
+.navegacion{
+    display:flex;    
+}
+
+/* tamaño-letra del menu*/ 
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size:large;
+    margin-left: 25px;   
+}
+
+/* diseño al momento de darle clic al menu*/ 
+.navegacion :hover{
+    background: rgb(0, 0, 11);
+    transition: all 0.4s linear; /*Cuando le da clic en el menu cambia*/
+    border-radius: 10%; 
+}
+
+/*** El logo y el titulo *******/
+#logo {
+    width: 140px;
+    height: 130px; /* Tamaño del logo */
+    margin-right: 350px; /* Espacio entre el logo y el título */
+    
+}
+
+.logonombre {
+    display: flex; /* coloca el nombre al lado del logo */
+    align-items: center; /* Alinea el nombre en el centro */
+    background-color: #ffffff;
+    color: rgba(199, 7, 7, 0.837); 
+    font-style: italic; 
+}
+
+/******************************** FORMULARIO *******************************/
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(199, 7, 7, 0.837), #0a141D); /* Fondo con degradado de rojo anaranjado */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    color:black; /* Rojo anaranjado */
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color:black;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #FF5733; /* Rojo anaranjado */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+}
+
+button {
+    background-color: #FF5733; /* Rojo anaranjado */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #FF4D25; /* Rojo anaranjado más oscuro */
+}
+/********************************  PIE DE PAGINA *******************************/
+.pie-pagina{
+    background-color: #0a141D;
+    text-align: center;
+}
+.pie-pagina .grupo-1{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #9f1717;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box small{
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+}
+.pie-pagina .grupo-1 .red-social i{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    margin-right: 5px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social i:hover{
+    color: red
+}
+
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

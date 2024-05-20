@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Repuestos de Motos</title>
+    <link rel="stylesheet" href="Css/Repuestos.css">
+    <!-- Iconos-->
+    <script src="https://kit.fontawesome.com/8073cbe658.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Hace parte lo que esta en rojo -->
+    <header class="encabezado">
+        <div class="navegacion">
+            <a href="Principal.html"> <i class="fa-solid fa-house"></i> </a>
+            <a href="Repuestos.html"> Repuestos </a>
+            <a href="Contactenos.html"> Contactenos </a> <br>
+        </div> 
+    </header> 
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">LOGO</h1>
+            </header>
+            <nav>
+                
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="fa-solid fa-hand-point-right"></i> Todos Los Productos </button>
+                    </li>
+                    <li>
+                        <button id="cripton" class="boton-menu boton-categoria"><i class="fa-solid fa-motorcycle"></i> Cripton Li</button>
+                    </li>
+                    <li>
+                        <button id="nmax" class="boton-menu boton-categoria"><i class="fa-solid fa-motorcycle"></i> Nmax </button>
+                    </li>
+                    <li>
+                        <button id="fz" class="boton-menu boton-categoria"><i class="fa-solid fa-motorcycle"></i> Fz 25</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">&copy; 2023 Tienda de repuestos</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal"> Todos los productos</h2>
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <!-- Esto se va a rellenar con JS-->
+                </div>                
+        </main>
+    </div>
+
+    <script src="./Js/repuestos.js"></script>
+</body>
+</html>       

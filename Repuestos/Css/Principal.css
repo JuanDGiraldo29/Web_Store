@@ -1,0 +1,239 @@
+body{
+    border:  solid #060606;  
+}
+/*** Banner (lo que este dentro de lo rojo) *******/
+.encabezado{
+    background-color: rgba(199, 7, 7, 0.837);
+    padding-left: 75%; /* La ubicación del buscar y el menu*/
+}
+
+/* El registrarse queda al lado del menu*/ 
+.navegacion{
+    display:flex;    
+}
+
+/* tamaño-letra del menu*/ 
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size:large;
+    margin-left: 25px;   
+}
+
+/* diseño al momento de darle clic al menu*/ 
+.navegacion :hover{
+    background: rgb(0, 0, 11);
+    transition: all 0.4s linear; /*Cuando le da clic en el menu cambia*/
+    border-radius: 10%; 
+}
+
+/*** El logo y el titulo *******/
+#logo {
+    width: 140px;
+    height: 130px; /* Tamaño del logo */
+    margin-right: 350px; /* Espacio entre el logo y el título */
+    
+}
+
+.logonombre {
+    display: flex; /* coloca el nombre al lado del logo */
+    align-items: center; /* Alinea el nombre en el centro */
+    background-color: #ffffff;
+    color: rgba(199, 7, 7, 0.837); 
+    font-style: italic; 
+}
+/********************* INISIAR SESION *********************/
+.overlay {  /* hace que el formulario sea flotante*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, rgba(223, 36, 36, 0.664), #132738); /* Fondo con degradado*/
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+   
+}
+
+.login-container h2 { /*Inisiar sesión*/
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin: 100px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007BFF;
+    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #132738;
+    border-radius: 3px;  
+}
+
+button {
+    background-color: rgba(199, 7, 7, 0.837);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-color: #0d2033;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0d2033;
+}
+
+.registro-contrasena {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/********************* BANNER DE PUBLICIDAD *********************/
+.banner{
+    height: 600px;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 3px;
+}
+
+@keyframes banner{
+    0%, 20%{
+        background-image: url(../img/rep2.jpg);
+    }
+    25%, 45%{
+        background-image: url(../img/rep3.png);
+    }
+    50%, 70%{
+        background-image: url(../img/rep4.png);
+    }
+    75%, 100%{
+        background-image: url(../img/rep5.jpg)
+    }
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,1,0.7)
+}
+
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 550;
+    text-align: center;
+}
+
+.info h1{
+    color:white;
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing:1px;
+}
+
+.info a{
+    color:white;
+    text-decoration: none;
+    background-color: rgba(199, 7, 7, 0.837);
+    padding: 15px 37px;
+    display: inline-block;
+    border-radius: 50px; 
+}
+
+.info a:hover{
+    color: rgb(4, 4, 4);
+}
+/********************************  PIE DE PAGINA *******************************/
+.pie-pagina{
+    background-color: #0a141D;
+    text-align: center;
+}
+.pie-pagina .grupo-1{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #9f1717;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box small{
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+}
+.pie-pagina .grupo-1 .red-social i{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    margin-right: 5px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social i:hover{
+    color: red
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

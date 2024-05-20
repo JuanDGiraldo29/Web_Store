@@ -1,0 +1,161 @@
+body{
+    border:  solid #060606;  
+}
+
+/*** Banner (lo que este dentro de lo rojo) *******/
+.encabezado{
+    background-color: rgba(199, 7, 7, 0.837);
+    padding-left: 75%; /* La ubicación del buscar y el menu*/
+}
+
+/* El registrarse queda al lado del menu*/ 
+.navegacion{
+    display:flex;    
+}
+
+/* tamaño-letra del menu*/ 
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size:large;
+    margin-left: 25px;   
+}
+
+/* diseño al momento de darle clic al menu*/ 
+.navegacion :hover{
+    background: rgb(0, 0, 11);
+    transition: all 0.4s linear; /*Cuando le da clic en el menu cambia*/
+    border-radius: 10%; 
+}
+
+/*** El logo y el titulo *******/
+#logo {
+    width: 140px;
+    height: 130px; /* Tamaño del logo */
+    margin-right: 350px; /* Espacio entre el logo y el título */
+    
+}
+
+.logonombre {
+    display: flex; /* coloca el nombre al lado del logo */
+    align-items: center; /* Alinea el nombre en el centro */
+    background-color: #ffffff;
+    color: rgba(199, 7, 7, 0.837); 
+    font-style: italic; 
+}
+
+/******************************** FORMULARIO *******************************/
+.formulario-container {
+    width: 400px;
+    background: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.formulario-container h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.btn-almacenar,
+.btn-limpiar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-almacenar:hover,
+.btn-limpiar:hover {
+    background-color: #0056b3;
+}
+
+.form-icons {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.form-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+/********************************  PIE DE PAGINA *******************************/
+.pie-pagina{
+    background-color: #0a141D;
+    text-align: center;
+}
+.pie-pagina .grupo-1{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #9f1717;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box small{
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+}
+.pie-pagina .grupo-1 .red-social i{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    margin-right: 5px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social i:hover{
+    color: red
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
